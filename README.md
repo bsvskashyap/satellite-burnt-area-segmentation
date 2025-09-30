@@ -101,17 +101,17 @@ This research introduced two novel deep learning architectures for burnt area ma
 1. **Custom UNET** - Enhanced U-Net architecture with optimized encoder-decoder design
 2. **UNET-GRU** - Hybrid architecture integrating Gated Recurrent Units with U-Net for improved temporal feature learning
 
-![Custom UNET Architecture](images/UNET.jpeg)
+![Custom UNET Architecture](images/UNET.tif)
 *Figure 1: Custom UNET architecture diagram showing the encoder-decoder design.*
 
-![UNET-GRU Architecture](images/UNET-GRU.jpeg)
+![UNET-GRU Architecture](images/UNET-GRU.tif)
 *Figure 2: UNET-GRU architecture diagram illustrating the integration of Gated Recurrent Units.*
 
 ### Performance Metrics
 
 The models were evaluated on real-world wildfire data from Bandipur Tiger Reserve, India, achieving state-of-the-art results:
 
-![Performance Metrics Table](images/stats.jpeg)
+![Performance Metrics Table](images/stats.tif)
 *Table 1: Performance statistics comparing Custom UNET and UNET-GRU architectures.*
 
 | Model | AUC Score |
@@ -127,7 +127,7 @@ The models were evaluated on real-world wildfire data from Bandipur Tiger Reserv
 
 ### Visual Results Comparison
 
-![Segmentation Results](images/results.jpeg)
+![Segmentation Results](images/RESULTS.tif)
 *Figure 3: Visual comparison of segmentation results showing model predictions.*
 
 ### Real-World Impact
