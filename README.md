@@ -1,5 +1,17 @@
 # Burnt Area Mapping Using Satellite Imagery Semantic Segmentation Research
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![GitHub stars](https://img.shields.io/github/stars/bsvskashyap/usra.svg?style=social&label=Star)](https://github.com/bsvskashyap/usra)
+
+## 📓 Notebooks
+
+- [View PreProcess.ipynb on GitHub](https://github.com/bsvskashyap/usra/blob/main/notebooks/PreProcess.ipynb) - Data preprocessing pipeline
+- [View Train.ipynb on GitHub](https://github.com/bsvskashyap/usra/blob/main/notebooks/Train.ipynb) - Model training with custom architectures
+- [View Final.ipynb on GitHub](https://github.com/bsvskashyap/usra/blob/main/notebooks/Final.ipynb) - Inference and visualization
+
+---
+
 This repository contains the implementation and trained models for semantic segmentation of satellite imagery using deep learning techniques. The project focuses on developing robust neural network architectures for pixel-wise classification of satellite imagery for burnt area mapping.
 
 ## 🏆 Key Achievements
@@ -82,15 +94,15 @@ python scripts/smooth_tiled_predictions.py
 
 ## Notebooks
 
-- **notebooks/PreProcess.ipynb** - Data preprocessing pipeline including augmentation and normalization
-- **notebooks/Train.ipynb** - Training script with custom U-Net architectures (standard and GRU-enhanced variants)
-- **notebooks/Final.ipynb** - Inference and visualization of segmentation results
+- `notebooks/PreProcess.ipynb` - Data preprocessing pipeline including augmentation and normalization
+- `notebooks/Train.ipynb` - Training script with custom U-Net architectures (standard and GRU-enhanced variants)
+- `notebooks/Final.ipynb` - Inference and visualization of segmentation results
 
 ## Pre-trained Models
 
 The repository includes a pre-trained model in the `models/` directory:
 
-- **Unetcustom_TotalLoss_SoftmaxAdam250LRschedule2000Decay1e4.hdf5** - Custom U-Net trained with total loss, Adam optimizer (LR=250), learning rate schedule (2000 steps), and weight decay (1e-4)
+- `Unetcustom_TotalLoss_SoftmaxAdam250LRschedule2000Decay1e4.hdf5` - Custom U-Net trained with total loss, Adam optimizer (LR=250), learning rate schedule (2000 steps), and weight decay (1e-4)
 
 ## Results
 
@@ -114,7 +126,7 @@ The models were evaluated on real-world wildfire data from Bandipur Tiger Reserv
 ![Results Table](images/stats.PNG)
 *Table: Burnt area mapping performance metrics for Custom UNET and UNET-GRU.*
 
-**Key Performance Highlights:**
+Key Performance Highlights:
 
 - **UNET-GRU**: AUC = 0.98 (Best Result)
 - **Custom UNET**: AUC = 0.96
@@ -162,7 +174,7 @@ Building on the architectures developed in this repository, we extended our rese
 
 ### Key Insights
 
-This research focused on understanding the **strengths and limitations of transferring VHR-trained models** to medium-resolution satellite data:
+This research focused on understanding the strengths and limitations of transferring VHR-trained models to medium-resolution satellite data:
 
 - Successfully demonstrated that models trained on one resolution can generalize to another with appropriate fine-tuning
 - Highlighted trade-offs between spatial resolution and model performance
