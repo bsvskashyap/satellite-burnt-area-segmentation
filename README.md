@@ -101,17 +101,17 @@ This research introduced two novel deep learning architectures for burnt area ma
 1. **Custom UNET** - Enhanced U-Net architecture with optimized encoder-decoder design
 2. **UNET-GRU** - Hybrid architecture integrating Gated Recurrent Units with U-Net for improved temporal feature learning
 
-![UNET Architecture](images/journal.pone.0327125.g002.jpeg)
+![UNET Architecture](images/UNET.tif)
 *Figure: Custom UNET architecture.*
 
-![UNET-GRU Architecture](images/journal.pone.0327125.g003.jpeg)
+![UNET-GRU Architecture](images/UNET-GRU.tif)
 *Figure: UNET-GRU hybrid network architecture.*
 
 ### Performance Metrics
 
 The models were evaluated on real-world wildfire data from Bandipur Tiger Reserve, India, achieving state-of-the-art results:
 
-![Results Table](images/journal.pone.0327125.t006.jpeg)
+![Results Table](images/stats.tif)
 *Table: Burnt area mapping performance metrics for Custom UNET and UNET-GRU.*
 
 **Key Performance Highlights:**
@@ -123,7 +123,7 @@ The models were evaluated on real-world wildfire data from Bandipur Tiger Reserv
 
 ### Visual Results Comparison
 
-![Segmentation Results](images/journal.pone.0327125.g004.jpeg)
+![Segmentation Results](images/RESULTS.tif)
 *Figure: Segmentation performance for burnt area detection on PlanetScope imagery.*
 
 ### Real-World Impact
