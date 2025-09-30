@@ -1,14 +1,14 @@
-# USRA: Urban Semantic Segmentation Research
+# USRA: Burnt Area Mapping Using Satellite Imagery Semantic Segmentation Research
 
-This repository contains the implementation and trained models for semantic segmentation of urban scenes using deep learning techniques. The project focuses on developing robust neural network architectures for pixel-wise classification of urban imagery.
+This repository contains the implementation and trained models for semantic segmentation of satellite imagery using deep learning techniques. The project focuses on developing robust neural network architectures for pixel-wise classification of satellite imagery for burnt area mapping.
 
 ## Overview
 
 The workflow consists of three main stages:
 
-1. **Data Preprocessing** - Preparation and augmentation of urban scene datasets
+1. **Data Preprocessing** - Preparation and augmentation of satellite imagery datasets
 2. **Model Training** - Training custom U-Net and GRU-based architectures
-3. **Inference** - Applying trained models to segment new urban images
+3. **Inference** - Applying trained models to segment new satellite images
 
 ## Installation
 
@@ -65,6 +65,7 @@ jupyter notebook FInal.ipynb
 ```
 
 For tiled prediction on large images, use:
+
 ```python
 python smooth_tiled_predictions.py
 ```
@@ -80,11 +81,11 @@ python smooth_tiled_predictions.py
 
 The repository includes a pre-trained model:
 
-- `Unetcustom_TotalLoss_SoftmaxAdam250LRschedule2000Decay1e4.hdf5` - Custom U-Net trained with total loss, Adam optimizer (LR=250), learning rate schedule (2000 steps), and weight decay (1e-4)
+- **Unetcustom_TotalLoss_SoftmaxAdam250LRschedule2000Decay1e4.hdf5** - Custom U-Net trained with total loss, Adam optimizer (LR=250), learning rate schedule (2000 steps), and weight decay (1e-4)
 
 ## Results
 
-The trained models achieve high-quality semantic segmentation on urban scenes, effectively classifying multiple classes including roads, buildings, vegetation, vehicles, and pedestrians. Detailed performance metrics and visualizations can be found in the inference notebooks.
+The trained models achieve high-quality semantic segmentation on satellite imagery, effectively classifying multiple classes including roads, buildings, vegetation, vehicles, and pedestrians. Detailed performance metrics and visualizations can be found in the inference notebooks.
 
 ## Citation
 
@@ -107,8 +108,8 @@ Copyright (c) 2025 Sai Balakavi
 
 ## Author
 
-**Sai Balakavi** - [bsvskashyap](https://github.com/bsvskashyap)
+Sai Balakavi - [bsvskashyap](https://github.com/bsvskashyap)
 
 ## Acknowledgments
 
-This work was conducted as part of urban scene understanding research. Special thanks to the open-source community for providing foundational tools and datasets.
+This work was conducted as part of burnt area mapping using satellite imagery scene understanding research. Special thanks to the open-source community for providing foundational tools and datasets.
