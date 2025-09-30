@@ -1,4 +1,4 @@
-# USRA: Burnt Area Mapping Using Satellite Imagery Semantic Segmentation Research
+# Burnt Area Mapping Using Satellite Imagery Semantic Segmentation Research
 
 This repository contains the implementation and trained models for semantic segmentation of satellite imagery using deep learning techniques. The project focuses on developing robust neural network architectures for pixel-wise classification of satellite imagery for burnt area mapping.
 
