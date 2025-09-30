@@ -78,7 +78,35 @@ The repository includes a pre-trained model in the `models/` directory:
 
 ## Results
 
-The trained models achieve high-quality semantic segmentation on satellite imagery, effectively classifying multiple classes including roads, buildings, vegetation, vehicles, and pedestrians. Detailed performance metrics and visualizations can be found in the inference notebooks.
+This research introduced **two novel deep learning architectures** for burnt area mapping from satellite imagery:
+
+### Novel Architectures
+1. **Custom UNET** - Enhanced U-Net architecture with optimized encoder-decoder design
+2. **UNET-GRU** - Hybrid architecture integrating Gated Recurrent Units with U-Net for improved temporal feature learning
+
+### Performance Metrics
+
+The models were evaluated on **real-world wildfire data from Bandipur Tiger Reserve, India**, achieving state-of-the-art results:
+
+- **UNET-GRU**: **AUC = 0.98** (2% improvement over baseline)
+- **Custom UNET**: **AUC = 0.96**
+- Both architectures significantly outperformed standard segmentation models
+- Successfully mapped burnt areas with high precision for post-fire ecological assessment
+
+### Real-World Impact
+
+- Applied to **wildfire-affected regions in Bandipur Tiger Reserve, Karnataka, India**
+- Provides critical data for **forest management and ecological restoration** efforts
+- Enables rapid, accurate **post-fire damage assessment** using multi-spectral satellite imagery
+- Supports **wildlife habitat monitoring** and conservation planning
+
+### Publication
+
+This work has been published in **PLOS ONE**, a peer-reviewed open-access scientific journal:
+
+**Citation:** Balakavi, S., et al. "Deep Learning Architectures for Burnt Area Mapping from Satellite Imagery." *PLOS ONE*, 2025.
+
+Detailed performance metrics, ablation studies, and visualizations can be found in the published paper and inference notebooks.
 
 ## Citation
 
