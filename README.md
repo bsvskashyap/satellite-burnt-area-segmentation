@@ -7,7 +7,7 @@ This repository contains the implementation and trained models for semantic segm
 The workflow consists of three main stages:
 
 1. **Data Preprocessing** - Preparation and augmentation of satellite imagery datasets
-2. **Model Training** - Training custom U-Net and GRU-based architectures
+2. **Model Training** - Training custom U-Net architectures (including standard and GRU-enhanced variants)
 3. **Inference** - Applying trained models to segment new satellite images
 
 ## Installation
@@ -42,19 +42,13 @@ This notebook handles data loading, normalization, and augmentation.
 
 ### 2. Model Training
 
-Train the semantic segmentation model using either architecture:
+Train the semantic segmentation model:
 
-**Standard U-Net:**
 ```python
 jupyter notebook notebooks/Train.ipynb
 ```
 
-**GRU-Enhanced U-Net:**
-```python
-jupyter notebook notebooks/Train_with_GRU.ipynb
-```
-
-Both notebooks implement custom loss functions and learning rate schedules for optimal convergence.
+This notebook implements custom U-Net architectures (including standard and GRU-enhanced variants) with custom loss functions and learning rate schedules for optimal convergence.
 
 ### 3. Inference
 
@@ -73,8 +67,7 @@ python scripts/smooth_tiled_predictions.py
 ## Notebooks
 
 - **notebooks/PreProcess.ipynb** - Data preprocessing pipeline including augmentation and normalization
-- **notebooks/Train.ipynb** - Main training script with custom U-Net architecture
-- **notebooks/Train_with_GRU.ipynb** - Alternative training with GRU layers for temporal consistency
+- **notebooks/Train.ipynb** - Training script with custom U-Net architectures (standard and GRU-enhanced variants)
 - **notebooks/Final.ipynb** - Inference and visualization of segmentation results
 
 ## Pre-trained Models
