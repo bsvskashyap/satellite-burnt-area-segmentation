@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 Run the preprocessing notebook to prepare your dataset:
 
-```python
+```bash
 jupyter notebook notebooks/PreProcess.ipynb
 ```
 
@@ -60,7 +60,7 @@ This notebook handles data loading, normalization, and augmentation.
 
 Train the semantic segmentation model:
 
-```python
+```bash
 jupyter notebook notebooks/Train.ipynb
 ```
 
@@ -70,13 +70,13 @@ This notebook implements custom U-Net architectures (including standard and GRU-
 
 Apply the trained model to new images:
 
-```python
+```bash
 jupyter notebook notebooks/Final.ipynb
 ```
 
 For tiled prediction on large images, use:
 
-```python
+```bash
 python scripts/smooth_tiled_predictions.py
 ```
 
@@ -88,7 +88,7 @@ python scripts/smooth_tiled_predictions.py
 
 ## Pre-trained Models
 
-The repository includes a pre-trained model in the `models/` directory:
+The repository includes a pre-trained model in the models/ directory:
 
 - **Unetcustom_TotalLoss_SoftmaxAdam250LRschedule2000Decay1e4.hdf5** - Custom U-Net trained with total loss, Adam optimizer (LR=250), learning rate schedule (2000 steps), and weight decay (1e-4)
 
@@ -101,9 +101,18 @@ This research introduced two novel deep learning architectures for burnt area ma
 1. **Custom UNET** - Enhanced U-Net architecture with optimized encoder-decoder design
 2. **UNET-GRU** - Hybrid architecture integrating Gated Recurrent Units with U-Net for improved temporal feature learning
 
+![Custom UNET Architecture](images/journal.pone.0327125.g002.jpeg)
+*Figure 1: Custom UNET architecture showing the encoder-decoder design with skip connections for precise burnt area segmentation.*
+
+![UNET-GRU Architecture](images/journal.pone.0327125.g003.jpeg)
+*Figure 2: UNET-GRU architecture integrating Gated Recurrent Units with U-Net for enhanced temporal feature learning and improved segmentation performance.*
+
 ### Performance Metrics
 
 The models were evaluated on real-world wildfire data from Bandipur Tiger Reserve, India, achieving state-of-the-art results:
+
+![Performance Metrics Table](images/journal.pone.0327125.t006.jpeg)
+*Table 1: Comprehensive performance metrics comparison between Custom UNET and UNET-GRU architectures, demonstrating state-of-the-art results on burnt area segmentation tasks.*
 
 | Model | AUC Score |
 |-------|----------|
@@ -111,19 +120,15 @@ The models were evaluated on real-world wildfire data from Bandipur Tiger Reserv
 | Custom UNET | 0.96 |
 
 **Key Performance Highlights:**
-
-- **UNET-GRU**: AUC = 0.98 (Best Result)
-- **Custom UNET**: AUC = 0.96
+- UNET-GRU: AUC = 0.98 (Best Result)
+- Custom UNET: AUC = 0.96
 - Both novel architectures demonstrated excellent performance for burnt area segmentation
 - Successfully mapped burnt areas with high precision for post-fire ecological assessment
 
 ### Visual Results Comparison
 
-[Placeholder for segmentation results comparison image showing: Original Satellite Image | Ground Truth | UNET-GRU Prediction | Custom UNET Prediction]
-
-![Results Comparison](images/results_comparison.png)
-
-**Figure:** Visual comparison of segmentation results on Bandipur Tiger Reserve wildfire imagery. Left to right: Original multi-spectral satellite image, ground truth burnt area mask, UNET-GRU predictions, Custom UNET predictions.
+![Segmentation Results](images/journal.pone.0327125.g004.jpeg)
+*Figure 3: Visual comparison of segmentation results on Bandipur Tiger Reserve wildfire imagery. The figure shows original multi-spectral satellite images alongside ground truth burnt area masks and model predictions (UNET-GRU and Custom UNET), demonstrating high accuracy in burnt area detection and delineation.*
 
 ### Real-World Impact
 
@@ -134,13 +139,13 @@ The models were evaluated on real-world wildfire data from Bandipur Tiger Reserv
 
 ## Cross-Resolution Mapping with Landsat and PlanetScope (Sensors 2025)
 
-Building on the architectures developed in this repository, we extended our research to investigate **cross-resolution transfer learning** for burnt area mapping using both **Landsat-8** (30m resolution) and **PlanetScope** (3m resolution) imagery. This work demonstrates how the same UNET and UNET-GRU architectures can be applied across different sensor resolutions with strategic training approaches.
+Building on the architectures developed in this repository, we extended our research to investigate cross-resolution transfer learning for burnt area mapping using both Landsat-8 (30m resolution) and PlanetScope (3m resolution) imagery. This work demonstrates how the same UNET and UNET-GRU architectures can be applied across different sensor resolutions with strategic training approaches.
 
 ### Research Setup
 
 - **Architectures**: Same Custom UNET and UNET-GRU models from this repository
 - **Study Area**: Bandipur Tiger Reserve, Karnataka, India (same region as PLOS ONE study)
-- **Datasets**: 
+- **Datasets**:
   - Landsat-8 OLI imagery (30m resolution, multispectral)
   - PlanetScope imagery (3m resolution, multispectral)
 - **Training Strategy**: Cross-resolution training to assess transferability of VHR (Very High Resolution) trained models to medium-resolution sensors
@@ -148,15 +153,13 @@ Building on the architectures developed in this repository, we extended our rese
 ### Quantifiable Results
 
 **Custom UNET with Landsat Labels:**
-
-- **Precision**: 0.89
-- **Accuracy**: 0.98
-- **IoU (Intersection over Union)**: 0.65
-- **Dice Coefficient**: 0.78
+- Precision: 0.89
+- Accuracy: 0.98
+- IoU (Intersection over Union): 0.65
+- Dice Coefficient: 0.78
 
 **PlanetScope-Labeled Models:**
-
-- **UNET-GRU Recall**: 0.87 (high sensitivity for burnt area detection)
+- UNET-GRU Recall: 0.87 (high sensitivity for burnt area detection)
 - Both architectures achieved strong performance on high-resolution imagery
 
 ### Key Insights
