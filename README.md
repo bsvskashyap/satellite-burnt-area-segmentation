@@ -88,7 +88,7 @@ python scripts/smooth_tiled_predictions.py
 
 ## Pre-trained Models
 
-The repository includes a pre-trained model in the models/ directory:
+The repository includes a pre-trained model in the `models/` directory:
 
 - **Unetcustom_TotalLoss_SoftmaxAdam250LRschedule2000Decay1e4.hdf5** - Custom U-Net trained with total loss, Adam optimizer (LR=250), learning rate schedule (2000 steps), and weight decay (1e-4)
 
@@ -101,34 +101,30 @@ This research introduced two novel deep learning architectures for burnt area ma
 1. **Custom UNET** - Enhanced U-Net architecture with optimized encoder-decoder design
 2. **UNET-GRU** - Hybrid architecture integrating Gated Recurrent Units with U-Net for improved temporal feature learning
 
-![Custom UNET Architecture](images/UNET.tif)
-*Figure 1: Custom UNET architecture diagram showing the encoder-decoder design.*
+![UNET Architecture](images/journal.pone.0327125.g002.jpeg)
+*Figure: Custom UNET architecture.*
 
-![UNET-GRU Architecture](images/UNET-GRU.tif)
-*Figure 2: UNET-GRU architecture diagram illustrating the integration of Gated Recurrent Units.*
+![UNET-GRU Architecture](images/journal.pone.0327125.g003.jpeg)
+*Figure: UNET-GRU hybrid network architecture.*
 
 ### Performance Metrics
 
 The models were evaluated on real-world wildfire data from Bandipur Tiger Reserve, India, achieving state-of-the-art results:
 
-![Performance Metrics Table](images/stats.tif)
-*Table 1: Performance statistics comparing Custom UNET and UNET-GRU architectures.*
-
-| Model | AUC Score |
-|-------|----------|
-| UNET-GRU | 0.98 (Best Result) |
-| Custom UNET | 0.96 |
+![Results Table](images/journal.pone.0327125.t006.jpeg)
+*Table: Burnt area mapping performance metrics for Custom UNET and UNET-GRU.*
 
 **Key Performance Highlights:**
-- UNET-GRU: AUC = 0.98 (Best Result)
-- Custom UNET: AUC = 0.96
+
+- **UNET-GRU**: AUC = 0.98 (Best Result)
+- **Custom UNET**: AUC = 0.96
 - Both novel architectures demonstrated excellent performance for burnt area segmentation
 - Successfully mapped burnt areas with high precision for post-fire ecological assessment
 
 ### Visual Results Comparison
 
-![Segmentation Results](images/RESULTS.tif)
-*Figure 3: Visual comparison of segmentation results showing model predictions.*
+![Segmentation Results](images/journal.pone.0327125.g004.jpeg)
+*Figure: Segmentation performance for burnt area detection on PlanetScope imagery.*
 
 ### Real-World Impact
 
@@ -153,12 +149,14 @@ Building on the architectures developed in this repository, we extended our rese
 ### Quantifiable Results
 
 **Custom UNET with Landsat Labels:**
+
 - Precision: 0.89
 - Accuracy: 0.98
 - IoU (Intersection over Union): 0.65
 - Dice Coefficient: 0.78
 
 **PlanetScope-Labeled Models:**
+
 - UNET-GRU Recall: 0.87 (high sensitivity for burnt area detection)
 - Both architectures achieved strong performance on high-resolution imagery
 
