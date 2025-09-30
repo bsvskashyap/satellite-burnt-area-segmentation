@@ -94,7 +94,7 @@ If you use this code or models in your research, please cite:
 ```bibtex
 @software{balakavi2025usra,
   author = {Balakavi, Sai},
-  title = {USRA: Urban Semantic Segmentation Research},
+  title = {USRA: Burnt Area Mapping Using Satellite Imagery},
   year = {2025},
   url = {https://github.com/bsvskashyap/usra}
 }
