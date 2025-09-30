@@ -101,18 +101,18 @@ This research introduced two novel deep learning architectures for burnt area ma
 1. **Custom UNET** - Enhanced U-Net architecture with optimized encoder-decoder design
 2. **UNET-GRU** - Hybrid architecture integrating Gated Recurrent Units with U-Net for improved temporal feature learning
 
-![Custom UNET Architecture](images/journal.pone.0327125.g002.jpeg)
-*Figure 1: Custom UNET architecture showing the encoder-decoder design with skip connections for precise burnt area segmentation.*
+![Custom UNET Architecture](images/UNET.jpeg)
+*Figure 1: Custom UNET architecture diagram showing the encoder-decoder design.*
 
-![UNET-GRU Architecture](images/journal.pone.0327125.g003.jpeg)
-*Figure 2: UNET-GRU architecture integrating Gated Recurrent Units with U-Net for enhanced temporal feature learning and improved segmentation performance.*
+![UNET-GRU Architecture](images/UNET-GRU.jpeg)
+*Figure 2: UNET-GRU architecture diagram illustrating the integration of Gated Recurrent Units.*
 
 ### Performance Metrics
 
 The models were evaluated on real-world wildfire data from Bandipur Tiger Reserve, India, achieving state-of-the-art results:
 
-![Performance Metrics Table](images/journal.pone.0327125.t006.jpeg)
-*Table 1: Comprehensive performance metrics comparison between Custom UNET and UNET-GRU architectures, demonstrating state-of-the-art results on burnt area segmentation tasks.*
+![Performance Metrics Table](images/stats.jpeg)
+*Table 1: Performance statistics comparing Custom UNET and UNET-GRU architectures.*
 
 | Model | AUC Score |
 |-------|----------|
@@ -127,8 +127,8 @@ The models were evaluated on real-world wildfire data from Bandipur Tiger Reserv
 
 ### Visual Results Comparison
 
-![Segmentation Results](images/journal.pone.0327125.g004.jpeg)
-*Figure 3: Visual comparison of segmentation results on Bandipur Tiger Reserve wildfire imagery. The figure shows original multi-spectral satellite images alongside ground truth burnt area masks and model predictions (UNET-GRU and Custom UNET), demonstrating high accuracy in burnt area detection and delineation.*
+![Segmentation Results](images/results.jpeg)
+*Figure 3: Visual comparison of segmentation results showing model predictions.*
 
 ### Real-World Impact
 
