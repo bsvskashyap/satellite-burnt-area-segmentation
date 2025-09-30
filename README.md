@@ -8,7 +8,7 @@ This repository contains the implementation and trained models for semantic segm
 - **🧠 Novel Architectures**: Developed two novel deep learning architectures:
   - **Custom UNET**: Enhanced U-Net with optimized encoder-decoder design (AUC = 0.96)
   - **UNET-GRU**: Hybrid architecture integrating Gated Recurrent Units with U-Net (AUC = 0.98)
-- **📊 State-of-the-Art Performance**: Achieved 2% AUC improvement over standard baseline models, reaching best-in-class performance for burnt area segmentation
+- **📊 State-of-the-Art Performance**: Achieved best-in-class performance for burnt area segmentation, with UNET-GRU reaching AUC of 0.98
 - **🛰️ Real-World Validation**: Models validated on 3-meter resolution PlanetScope satellite imagery from wildfire-affected regions in Bandipur Tiger Reserve, Karnataka, India
 - **🌲 Actionable Impact**: Delivered critical insights for:
   - Forest management and ecological restoration planning
@@ -103,23 +103,24 @@ This research introduced two novel deep learning architectures for burnt area ma
 
 The models were evaluated on real-world wildfire data from Bandipur Tiger Reserve, India, achieving state-of-the-art results:
 
-| Model | AUC Score | Improvement over Baseline |
-|-------|-----------|---------------------------|
-| **UNET-GRU** | **0.98** | **+2%** (Best Result) |
-| **Custom UNET** | **0.96** | +0% |
-| Standard Baseline | 0.96 | - |
+| Model | AUC Score |
+|-------|----------|
+| UNET-GRU | 0.98 (Best Result) |
+| Custom UNET | 0.96 |
 
 **Key Performance Highlights:**
-- UNET-GRU: AUC = 0.98 (2% improvement over baseline)
-- Custom UNET: AUC = 0.96
-- Both architectures significantly outperformed standard segmentation models
+
+- **UNET-GRU**: AUC = 0.98 (Best Result)
+- **Custom UNET**: AUC = 0.96
+- Both novel architectures demonstrated excellent performance for burnt area segmentation
 - Successfully mapped burnt areas with high precision for post-fire ecological assessment
 
 ### Visual Results Comparison
 
-*[Placeholder for segmentation results comparison image showing: Original Satellite Image | Ground Truth | UNET-GRU Prediction | Custom UNET Prediction]*
+[Placeholder for segmentation results comparison image showing: Original Satellite Image | Ground Truth | UNET-GRU Prediction | Custom UNET Prediction]
 
-![Results Comparison](./images/results_comparison.png)
+![Results Comparison](images/results_comparison.png)
+
 *Figure: Visual comparison of segmentation results on Bandipur Tiger Reserve wildfire imagery. Left to right: Original multi-spectral satellite image, ground truth burnt area mask, UNET-GRU predictions, Custom UNET predictions.*
 
 ### Real-World Impact
@@ -133,7 +134,7 @@ The models were evaluated on real-world wildfire data from Bandipur Tiger Reserv
 
 This work has been published in PLOS ONE, a peer-reviewed open-access scientific journal:
 
-**Citation**: Balakavi, S., et al. "Deep Learning Architectures for Burnt Area Mapping from Satellite Imagery." PLOS ONE, 2025.
+**Citation:** Balakavi, S., et al. "Deep Learning Architectures for Burnt Area Mapping from Satellite Imagery." PLOS ONE, 2025.
 
 Detailed performance metrics, ablation studies, and visualizations can be found in the published paper and inference notebooks.
 
