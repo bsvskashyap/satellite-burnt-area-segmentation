@@ -113,3 +113,5 @@ Sai Balakavi - [bsvskashyap](https://github.com/bsvskashyap)
 ## Acknowledgments
 
 This work was conducted as part of burnt area mapping using satellite imagery scene understanding research. Special thanks to the open-source community for providing foundational tools and datasets.
+
+Portions of this repository were adapted from open-source notebooks and scripts by Digital Sreeni (bnsreenu). Substantial modifications and new features have been added for burnt area mapping using satellite imagery.
