@@ -35,7 +35,7 @@ pip install -r requirements.txt
 Run the preprocessing notebook to prepare your dataset:
 
 ```python
-jupyter notebook PreProcess.ipynb
+jupyter notebook notebooks/PreProcess.ipynb
 ```
 
 This notebook handles data loading, normalization, and augmentation.
@@ -46,12 +46,12 @@ Train the semantic segmentation model using either architecture:
 
 **Standard U-Net:**
 ```python
-jupyter notebook Train.ipynb
+jupyter notebook notebooks/Train.ipynb
 ```
 
 **GRU-Enhanced U-Net:**
 ```python
-jupyter notebook Train_with_GRU.ipynb
+jupyter notebook notebooks/Train_with_GRU.ipynb
 ```
 
 Both notebooks implement custom loss functions and learning rate schedules for optimal convergence.
@@ -61,25 +61,25 @@ Both notebooks implement custom loss functions and learning rate schedules for o
 Apply the trained model to new images:
 
 ```python
-jupyter notebook FInal.ipynb
+jupyter notebook notebooks/Final.ipynb
 ```
 
 For tiled prediction on large images, use:
 
 ```python
-python smooth_tiled_predictions.py
+python scripts/smooth_tiled_predictions.py
 ```
 
 ## Notebooks
 
-- **PreProcess.ipynb** - Data preprocessing pipeline including augmentation and normalization
-- **Train.ipynb** - Main training script with custom U-Net architecture
-- **Train_with_GRU.ipynb** - Alternative training with GRU layers for temporal consistency
-- **FInal.ipynb** - Inference and visualization of segmentation results
+- **notebooks/PreProcess.ipynb** - Data preprocessing pipeline including augmentation and normalization
+- **notebooks/Train.ipynb** - Main training script with custom U-Net architecture
+- **notebooks/Train_with_GRU.ipynb** - Alternative training with GRU layers for temporal consistency
+- **notebooks/Final.ipynb** - Inference and visualization of segmentation results
 
 ## Pre-trained Models
 
-The repository includes a pre-trained model:
+The repository includes a pre-trained model in the `models/` directory:
 
 - **Unetcustom_TotalLoss_SoftmaxAdam250LRschedule2000Decay1e4.hdf5** - Custom U-Net trained with total loss, Adam optimizer (LR=250), learning rate schedule (2000 steps), and weight decay (1e-4)
 
