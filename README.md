@@ -187,7 +187,7 @@ This research has resulted in two peer-reviewed publications:
 
 ### 1. Deep Learning Architectures for Burnt Area Mapping (PLOS ONE, 2025)
 
-**Full Citation:** Balakavi, S., et al. "Deep Learning Architectures for Burnt Area Mapping from Satellite Imagery." *PLOS ONE*, 2025.
+**Full Citation:** Balakavi S, Vadrevu V, Lasko K (2025) Mapping burnt areas using very high-resolution imagery and deep learning algorithms - a case study in Bandipur, India. PLOS ONE 20(7): e0327125. https://doi.org/10.1371/journal.pone.0327125
 
 **Summary:** Introduced Custom UNET and UNET-GRU architectures for semantic segmentation of satellite imagery, achieving state-of-the-art performance (AUC: 0.96-0.98) on burnt area mapping tasks using PlanetScope imagery.
 
