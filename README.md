@@ -2,13 +2,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![GitHub stars](https://img.shields.io/github/stars/bsvskashyap/usra.svg?style=social&label=Star)](https://github.com/bsvskashyap/usra)
+[![GitHub stars](https://img.shields.io/github/stars/bsvskashyap/satellite-burnt-area-segmentation.svg?style=social&label=Star)](https://github.com/bsvskashyap/satellite-burnt-area-segmentation)
 
 ## 📓 Notebooks
 
-- [View PreProcess.ipynb on GitHub](https://github.com/bsvskashyap/usra/blob/main/notebooks/PreProcess.ipynb) - Data preprocessing pipeline
-- [View Train.ipynb on GitHub](https://github.com/bsvskashyap/usra/blob/main/notebooks/Train.ipynb) - Model training with custom architectures
-- [View Final.ipynb on GitHub](https://github.com/bsvskashyap/usra/blob/main/notebooks/Final.ipynb) - Inference and visualization
+- [View PreProcess.ipynb on GitHub](https://github.com/bsvskashyap/satellite-burnt-area-segmentation/blob/main/notebooks/PreProcess.ipynb) - Data preprocessing pipeline
+- [View Train.ipynb on GitHub](https://github.com/bsvskashyap/satellite-burnt-area-segmentation/blob/main/notebooks/Train.ipynb) - Model training with custom architectures
+- [View Final.ipynb on GitHub](https://github.com/bsvskashyap/satellite-burnt-area-segmentation/blob/main/notebooks/Final.ipynb) - Inference and visualization
 
 ---
 
@@ -43,8 +43,8 @@ The workflow consists of three main stages:
 Clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/bsvskashyap/usra.git
-cd usra
+git clone https://github.com/bsvskashyap/satellite-burnt-area-segmentation.git
+cd satellite-burnt-area-segmentation
 pip install -r requirements.txt
 ```
 
@@ -206,7 +206,7 @@ If you use this code or models in your research, please cite:
   author = {Balakavi, Sai},
   title = {USRA: Burnt Area Mapping Using Satellite Imagery},
   year = {2025},
-  url = {https://github.com/bsvskashyap/usra}
+  url = {https://github.com/bsvskashyap/satellite-burnt-area-segmentation}
 }
 ```
 
