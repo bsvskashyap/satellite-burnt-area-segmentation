@@ -6,7 +6,7 @@
 
 ## 📓 Notebooks
 
-- [View PreProcess.ipynb on GitHub](https://github.com/bsvskashyap/satellite-burnt-area-segmentation/blob/main/notebooks/PreProcess.ipynb) - Data preprocessing pipeline
+- [View Pre_Process.ipynb on GitHub](https://github.com/bsvskashyap/satellite-burnt-area-segmentation/blob/main/notebooks/Pre_Process.ipynb) - Data preprocessing pipeline
 - [View Train.ipynb on GitHub](https://github.com/bsvskashyap/satellite-burnt-area-segmentation/blob/main/notebooks/Train.ipynb) - Model training with custom architectures
 - [View Final.ipynb on GitHub](https://github.com/bsvskashyap/satellite-burnt-area-segmentation/blob/main/notebooks/Final.ipynb) - Inference and visualization
 
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 Run the preprocessing notebook to prepare your dataset:
 
 ```bash
-jupyter notebook notebooks/PreProcess.ipynb
+jupyter notebook notebooks/Pre_Process.ipynb
 ```
 
 This notebook handles data loading, normalization, and augmentation.
@@ -94,7 +94,7 @@ python scripts/smooth_tiled_predictions.py
 
 ## Notebooks
 
-- `notebooks/PreProcess.ipynb` - Data preprocessing pipeline including augmentation and normalization
+- `notebooks/Pre_Process.ipynb` - Data preprocessing pipeline including augmentation and normalization
 - `notebooks/Train.ipynb` - Training script with custom U-Net architectures (standard and GRU-enhanced variants)
 - `notebooks/Final.ipynb` - Inference and visualization of segmentation results
 
