@@ -202,9 +202,9 @@ This research has resulted in two peer-reviewed publications:
 If you use this code or models in your research, please cite:
 
 ```bibtex
-@software{balakavi2025usra,
+@software{balakavi202,
   author = {Balakavi, Sai},
-  title = {USRA: Burnt Area Mapping Using Satellite Imagery},
+  title = {Burnt Area Mapping Using Satellite Imagery Semantic Segmentation Research},
   year = {2025},
   url = {https://github.com/bsvskashyap/satellite-burnt-area-segmentation}
 }
